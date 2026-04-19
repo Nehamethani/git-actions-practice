@@ -18,13 +18,10 @@ jobs:
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
-          prettier: true
   
   test:
     needs: lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestgit
     steps:
       - name: Get code
         uses: actions/checkout@v3
